@@ -1,103 +1,153 @@
-/* Reset cơ bản */
+/* =========================
+   RESET
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body */
+/* =========================
+   BODY
+========================= */
 body {
   font-family: "Georgia", "Times New Roman", serif;
-  background-color: #ffffff;
-  color: #7a1f1f;
+  background-color: transparent;
+  color: #2f2f2f;              /* xám đậm – dễ đọc */
   display: flex;
   justify-content: center;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Khung thiệp */
+/* =========================
+   CARD
+========================= */
 .card {
-  max-width: 420px;
+  max-width: 430px;
   width: 100%;
-  padding: 40px 20px;
+  padding: 48px 24px;
   text-align: center;
 }
 
-/* Tiêu đề nhỏ */
+/* =========================
+   TITLES
+========================= */
 h1 {
-  font-size: 14px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #9b1c1c;              /* đỏ rượu */
+  margin-bottom: 18px;
 }
 
-/* Tiêu đề chính */
 h2 {
-  font-size: 28px;
-  margin-bottom: 8px;
+  font-size: 30px;
+  color: #7a1f1f;              /* đỏ đậm */
+  margin-bottom: 6px;
 }
 
-/* Subtitle */
+/* =========================
+   SUBTITLE
+========================= */
 .subtitle {
   font-style: italic;
   font-size: 14px;
-  margin-bottom: 30px;
-  color: #a04a4a;
+  color: #2f7f83;              /* xanh teal */
+  margin-bottom: 34px;
 }
 
-/* Các section */
+/* =========================
+   SECTION
+========================= */
 .section {
-  margin: 35px 0;
+  margin: 40px 0;
 }
 
-/* Tiêu đề section */
 .section h3 {
   font-size: 14px;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
+  letter-spacing: 3px;
+  color: #7a1f1f;              /* đỏ cho tiêu đề nhỏ */
+  margin-bottom: 14px;
 }
 
-/* Địa điểm nổi bật */
+/* =========================
+   HIGHLIGHT (ĐỊA ĐIỂM)
+========================= */
 .highlight {
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 5px;
+  color: #1f6f75;              /* xanh kỹ thuật */
+  margin-bottom: 6px;
 }
 
-/* Ngày tháng */
+/* =========================
+   DATE
+========================= */
 .date {
   font-style: italic;
   font-size: 14px;
-  color: #a04a4a;
+  color: #888888;
 }
 
-/* Nội dung */
+/* =========================
+   TEXT
+========================= */
 .section p {
   font-size: 15px;
-  margin: 8px 0;
+  margin: 9px 0;
+  color: #2f2f2f;
 }
 
-/* Footer */
+/* =========================
+   MAP BUTTON
+========================= */
+.map-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 26px;
+  border-radius: 28px;
+  border: 1.5px solid #1f6f75;
+  color: #1f6f75;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+  background-color: #1f6f75;
+  color: #ffffff;
+}
+
+/* =========================
+   FOOTER
+========================= */
 .footer {
-  margin-top: 40px;
+  margin-top: 46px;
   font-style: italic;
   font-size: 14px;
+  color: #555555;
 }
 
-/* Tên bộ phận */
+/* =========================
+   TEAM NAME
+========================= */
 .team {
-  margin-top: 20px;
+  margin-top: 24px;
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  color: #7a1f1f;
 }
 
-/* Responsive */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 480px) {
-  .card {
-    padding: 30px 15px;
+  h2 {
+    font-size: 26px;
   }
 
-  h2 {
-    font-size: 24px;
+  .card {
+    padding: 36px 18px;
   }
 }
