@@ -5,25 +5,133 @@
   <title>Year End Party 2025 | Bộ phận Kỹ thuật</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Nền gradient pastel nhẹ -->
+  <!-- NỀN GRADIENT PASTEL -->
   <style>
     body {
+      font-family: "Georgia", "Times New Roman", serif;
       background: linear-gradient(
         135deg,
         #fffaf5,
-        #f3f7ff,
+        #f2f7ff,
         #fdf1f6
       );
-      min-height: 100vh;
+      color: #2f2f2f;
+      display: flex;
+      justify-content: center;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      max-width: 430px;
+      width: 100%;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    /* ===== TIÊU ĐỀ ===== */
+    h1 {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #9b1c1c;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #7a1f1f;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 14px;
+      color: #1f6f75; /* xanh kỹ thuật */
+      margin-bottom: 34px;
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      margin: 40px 0;
+    }
+
+    .section h3 {
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: #7a1f1f;
+      margin-bottom: 14px;
+    }
+
+    .highlight {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1f6f75;
+      margin-bottom: 6px;
+    }
+
+    .date {
+      font-style: italic;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    .section p {
+      font-size: 15px;
+      margin: 9px 0;
+      color: #2f2f2f;
+    }
+
+    /* ===== NÚT GOOGLE MAPS ===== */
+    .map-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 26px;
+      border-radius: 28px;
+      border: 1.5px solid #1f6f75;
+      color: #1f6f75;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .map-btn:hover {
+      background-color: #1f6f75;
+      color: #ffffff;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      margin-top: 46px;
+      font-style: italic;
+      font-size: 14px;
+      color: #555555;
+    }
+
+    .team {
+      margin-top: 24px;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #7a1f1f;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 36px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- 🎵 Nhạc nền -->
+<!-- 🎵 NHẠC NỀN -->
 <audio autoplay loop>
   <source src="music/happy_new_year.mp3" type="audio/mpeg">
 </audio>
@@ -35,14 +143,12 @@
   <h2>YEAR END PARTY 2025</h2>
   <p class="subtitle">Technical Team Gathering</p>
 
-  <!-- Địa điểm -->
   <div class="section">
     <h3>ĐỊA ĐIỂM</h3>
     <p class="highlight">Nhà Ms. Vân Anh</p>
     <p class="date">30 · 12 · 2025</p>
   </div>
 
-  <!-- Lời mời -->
   <div class="section">
     <h3>TRÂN TRỌNG KÍNH MỜI</h3>
     <p>
@@ -58,24 +164,21 @@
     </p>
   </div>
 
-  <!-- Thông tin buổi tiệc -->
   <div class="section">
     <h3>THÔNG TIN BUỔI TIỆC</h3>
     <p><strong>Thời gian:</strong> 08 giờ 00 phút</p>
     <p><strong>Ngày:</strong> 30 · 12 · 2025</p>
     <p><strong>Địa điểm:</strong> Nhà Ms. Vân Anh</p>
 
-    <!-- Nút Google Maps -->
     <a
       class="map-btn"
-      href="https://www.google.com/maps?q=20.6789304,105.9428794&entry=gps&lucs=,94286594,94297699,94275415,94284457,94231188,94280568,47071704,94218641,100792929,94282134,94286869&g_ep=CAISEjI1LjQ5LjkuODM4ODk5MTgzMBgAINeCAypkLDk0Mjg2NTk0LDk0Mjk3Njk5LDk0Mjc1NDE1LDk0Mjg0NDU3LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDEwMDc5MjkyOSw5NDI4MjEzNCw5NDI4Njg2OUICVk4%3D&skid=df32533d-a2de-483c-986d-1205a124b6bd&g_st=iz"
+      href="https://maps.app.goo.gl/XXXXXXX"
       target="_blank"
     >
       📍 Xem vị trí trên Google Maps
     </a>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
     <p>
       Sự hiện diện của Anh / Chị là niềm vui<br>
