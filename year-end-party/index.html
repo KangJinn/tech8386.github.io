@@ -1,195 +1,266 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Year End Party 2025 | Bộ phận Kỹ thuật</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Year End Party 2025</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- NỀN GRADIENT PASTEL -->
-  <style>
-    body {
-      font-family: "Georgia", "Times New Roman", serif;
-      background: linear-gradient(
-        135deg,
-        #fffaf5,
-        #f2f7ff,
-        #fdf1f6
-      );
-      color: #2f2f2f;
-      display: flex;
-      justify-content: center;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+/* ================= BACKGROUND ================= */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at top, #1b3a4b, #0b1d26);
+  color: #e8f1f2;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
 
-    .card {
-      max-width: 430px;
-      width: 100%;
-      padding: 48px 24px;
-      text-align: center;
-    }
+/* ================= SHAPES ================= */
+.shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  z-index: 0;
+}
 
-    /* ===== TIÊU ĐỀ ===== */
-    h1 {
-      font-size: 13px;
-      letter-spacing: 4px;
-      color: #9b1c1c;
-      margin-bottom: 18px;
-    }
+.shape.one {
+  width: 260px;
+  height: 260px;
+  background: #38bdf8;
+  top: -80px;
+  left: -80px;
+}
 
-    h2 {
-      font-size: 30px;
-      color: #7a1f1f;
-      margin-bottom: 6px;
-    }
+.shape.two {
+  width: 320px;
+  height: 320px;
+  background: #5eead4;
+  bottom: -120px;
+  right: -100px;
+}
 
-    .subtitle {
-      font-style: italic;
-      font-size: 14px;
-      color: #1f6f75; /* xanh kỹ thuật */
-      margin-bottom: 34px;
-    }
+.shape.three {
+  width: 200px;
+  height: 200px;
+  background: #facc15;
+  top: 40%;
+  left: -100px;
+}
 
-    /* ===== SECTION ===== */
-    .section {
-      margin: 40px 0;
-    }
+/* ================= CARD ================= */
+.card {
+  max-width: 420px;
+  padding: 56px 24px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
 
-    .section h3 {
-      font-size: 14px;
-      letter-spacing: 3px;
-      color: #7a1f1f;
-      margin-bottom: 14px;
-    }
+/* ================= TEXT ================= */
+h1 {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9be7ff;
+  margin-bottom: 18px;
+}
 
-    .highlight {
-      font-size: 22px;
-      font-weight: bold;
-      color: #1f6f75;
-      margin-bottom: 6px;
-    }
+h2 {
+  font-size: 30px;
+  color: #ffffff;
+}
 
-    .date {
-      font-style: italic;
-      font-size: 14px;
-      color: #888888;
-    }
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #5eead4;
+  margin-bottom: 36px;
+}
 
-    .section p {
-      font-size: 15px;
-      margin: 9px 0;
-      color: #2f2f2f;
-    }
+.section {
+  margin: 38px 0;
+}
 
-    /* ===== NÚT GOOGLE MAPS ===== */
-    .map-btn {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 10px 26px;
-      border-radius: 28px;
-      border: 1.5px solid #1f6f75;
-      color: #1f6f75;
-      font-size: 14px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
+.section h3 {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #9be7ff;
+}
 
-    .map-btn:hover {
-      background-color: #1f6f75;
-      color: #ffffff;
-    }
+.highlight {
+  font-size: 22px;
+  font-weight: 600;
+  color: #5eead4;
+}
 
-    /* ===== FOOTER ===== */
-    .footer {
-      margin-top: 46px;
-      font-style: italic;
-      font-size: 14px;
-      color: #555555;
-    }
+.date {
+  font-size: 14px;
+  font-style: italic;
+  color: #cbd5e1;
+}
 
-    .team {
-      margin-top: 24px;
-      font-style: normal;
-      font-weight: bold;
-      letter-spacing: 3px;
-      color: #7a1f1f;
-    }
+.section p {
+  font-size: 15px;
+  line-height: 1.7;
+}
 
-    /* ===== MOBILE ===== */
-    @media (max-width: 480px) {
-      h2 {
-        font-size: 26px;
-      }
+/* ================= MAP BUTTON ================= */
+.map-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #38bdf8, #5eead4);
+  color: #003344;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(94,234,212,0.6);
+}
 
-      .card {
-        padding: 36px 18px;
-      }
-    }
-  </style>
+/* ================= FOOTER ================= */
+.footer {
+  margin-top: 46px;
+  font-style: italic;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.team {
+  margin-top: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+/* ================= FIREWORK CANVAS ================= */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+</style>
 </head>
 
 <body>
 
-<!-- 🎵 NHẠC NỀN -->
+<!-- SHAPES -->
+<div class="shape one"></div>
+<div class="shape two"></div>
+<div class="shape three"></div>
+
+<!-- FIREWORK CANVAS -->
+<canvas id="fireworks"></canvas>
+
+<!-- MUSIC -->
 <audio autoplay loop>
   <source src="music/happy_new_year.mp3" type="audio/mpeg">
 </audio>
 
 <div class="card">
 
-  <h1>THƯ MỜI</h1>
+<h1>THƯ MỜI</h1>
+<h2>YEAR END PARTY 2025</h2>
+<p class="subtitle">Technical Team Gathering</p>
 
-  <h2>YEAR END PARTY 2025</h2>
-  <p class="subtitle">Technical Team Gathering</p>
+<div class="section">
+  <h3>ĐỊA ĐIỂM</h3>
+  <p class="highlight">Nhà Ms. Vân Anh</p>
+  <p class="date">30 · 12 · 2025</p>
+</div>
 
-  <div class="section">
-    <h3>ĐỊA ĐIỂM</h3>
-    <p class="highlight">Nhà Ms. Vân Anh</p>
-    <p class="date">30 · 12 · 2025</p>
-  </div>
+<div class="section">
+  <h3>TRÂN TRỌNG KÍNH MỜI</h3>
+  <p><strong>Bộ phận Kỹ thuật</strong></p>
+  <p>
+    Đến tham dự Bữa tiệc Tất Niên 2025<br>
+    cùng nhìn lại một năm làm việc<br>
+    và chào đón năm mới<br>
+    với tinh thần gắn kết – khởi sắc 🎉
+  </p>
+</div>
 
-  <div class="section">
-    <h3>TRÂN TRỌNG KÍNH MỜI</h3>
-    <p>
-      Toàn thể Anh / Chị<br>
-      <strong>Bộ phận Kỹ thuật</strong>
-    </p>
-    <p>
-      Đến tham dự Bữa tiệc Tất Niên 2025<br>
-      nhằm tổng kết một năm làm việc,<br>
-      cùng nhìn lại những nỗ lực đã qua<br>
-      và chào đón năm mới<br>
-      với tinh thần gắn kết – khởi sắc 🎊
-    </p>
-  </div>
+<div class="section">
+  <h3>THÔNG TIN BUỔI TIỆC</h3>
+  <p>⏰ 08:00 – 30 · 12 · 2025</p>
+  <p>📍 Nhà Ms. Vân Anh</p>
 
-  <div class="section">
-    <h3>THÔNG TIN BUỔI TIỆC</h3>
-    <p><strong>Thời gian:</strong> 08 giờ 00 phút</p>
-    <p><strong>Ngày:</strong> 30 · 12 · 2025</p>
-    <p><strong>Địa điểm:</strong> Nhà Ms. Vân Anh</p>
+  <a class="map-btn" href="https://maps.app.goo.gl/XXXXXXX" target="_blank">
+    📍 Xem vị trí trên Google Maps
+  </a>
+</div>
 
-    <a
-      class="map-btn"
-      href="https://maps.app.goo.gl/XXXXXXX"
-      target="_blank"
-    >
-      📍 Xem vị trí trên Google Maps
-    </a>
-  </div>
-
-  <div class="footer">
-    <p>
-      Sự hiện diện của Anh / Chị là niềm vui<br>
-      và góp phần tạo nên một buổi tất niên<br>
-      trọn vẹn và ý nghĩa.
-    </p>
-
-    <p class="team">BỘ PHẬN KỸ THUẬT</p>
-  </div>
+<div class="footer">
+  <p>Sự hiện diện của Anh / Chị là niềm vui<br>
+     và góp phần tạo nên một buổi tất niên ý nghĩa.</p>
+  <p class="team">BỘ PHẬN KỸ THUẬT</p>
+</div>
 
 </div>
+
+<!-- ================= FIREWORK SCRIPT ================= -->
+<script>
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+let w, h;
+
+function resize() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+class Particle {
+  constructor(x, y, color) {
+    this.x = x;
+    this.y = y;
+    this.radius = Math.random() * 2 + 1;
+    this.color = color;
+    this.vx = (Math.random() - 0.5) * 6;
+    this.vy = (Math.random() - 0.5) * 6;
+    this.life = 80;
+  }
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.life--;
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+}
+
+let particles = [];
+
+function explode() {
+  const x = Math.random() * w;
+  const y = Math.random() * h * 0.5;
+  const colors = ["#38bdf8", "#5eead4", "#facc15", "#f472b6"];
+  for (let i = 0; i < 40; i++) {
+    particles.push(new Particle(x, y, colors[Math.floor(Math.random() * colors.length)]));
+  }
+}
+
+function animate() {
+  ctx.clearRect(0, 0, w, h);
+  particles = particles.filter(p => p.life > 0);
+  particles.forEach(p => {
+    p.update();
+    p.draw();
+  });
+  requestAnimationFrame(animate);
+}
+
+setInterval(explode, 1800);
+animate();
+</script>
 
 </body>
 </html>
