@@ -1,0 +1,103 @@
+/* Reset cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #ffffff;
+  color: #7a1f1f;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+/* Khung thiệp */
+.card {
+  max-width: 420px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Tiêu đề nhỏ */
+h1 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* Tiêu đề chính */
+h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #a04a4a;
+}
+
+/* Các section */
+.section {
+  margin: 35px 0;
+}
+
+/* Tiêu đề section */
+.section h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+/* Địa điểm nổi bật */
+.highlight {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Ngày tháng */
+.date {
+  font-style: italic;
+  font-size: 14px;
+  color: #a04a4a;
+}
+
+/* Nội dung */
+.section p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Tên bộ phận */
+.team {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
